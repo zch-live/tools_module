@@ -122,7 +122,7 @@ public class StatusBarUtil {
             lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
             activity.getWindow().setAttributes(lp);
         }*/
-        //setColor(activity, Color.WHITE);
+        setColor(activity, Color.WHITE);
         setDarkMode(activity);
     }
 

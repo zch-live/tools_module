@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d702ef5-6f0c-43f9-a068-6de7139994cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/StatusBarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/StatusBarUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +78,8 @@
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/WheelView.java_SELECTED": "WheelView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wright/KeyboardView.kt_SELECTED": "KeyboardView",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "D:/AndroidProjectShengqu/ToolsModule",
-    "memory.settings.postsync.last.time.stamp": "1767066443732",
+    "last_opened_file_path": "D:/AndroidProjectShengqu/earn-android-e-id",
+    "memory.settings.postsync.last.time.stamp": "1767162452181",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
