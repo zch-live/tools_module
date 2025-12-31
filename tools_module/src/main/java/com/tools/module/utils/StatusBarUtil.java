@@ -117,12 +117,12 @@ public class StatusBarUtil {
      */
     public static void setTransparentForWindow(@NonNull Activity activity) {
         transparentStatusBar(activity.getWindow());
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
             lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
             activity.getWindow().setAttributes(lp);
-        }
-        setColor(activity, Color.WHITE);
+        }*/
+        //setColor(activity, Color.WHITE);
         setDarkMode(activity);
     }
 
