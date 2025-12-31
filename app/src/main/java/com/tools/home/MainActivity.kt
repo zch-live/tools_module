@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
     var btn10: Button? = null
     var btn11: Button? = null
     var btn12: Button? = null
+    var btn13: Button? = null
+    var btn14: Button? = null
+    var btn15: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +43,9 @@ class MainActivity : AppCompatActivity() {
         btn10 = findViewById(R.id.btn10)
         btn11 = findViewById(R.id.btn11)
         btn12 = findViewById(R.id.btn12)
+        btn13 = findViewById(R.id.btn13)
+        btn14 = findViewById(R.id.btn14)
+        btn15 = findViewById(R.id.btn15)
 
         setOnClick()
     }
