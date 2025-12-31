@@ -6,6 +6,7 @@ import android.icu.text.DecimalFormat
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -18,6 +19,7 @@ import com.tools.module.bean.Constants.KB_C_POINT
 import com.tools.module.utils.*
 import com.tools.module.wright.KeyboardView
 import kotlin.math.max
+
 
 /**
  * AA收款

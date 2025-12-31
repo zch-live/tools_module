@@ -9,7 +9,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d702ef5-6f0c-43f9-a068-6de7139994cf" name="Changes" comment="" />
+    <list default="true" id="8d702ef5-6f0c-43f9-a068-6de7139994cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/AAActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/AAActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/StatusBarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/StatusBarUtil.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -70,12 +86,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/NumberWheelView.java_SELECTED": "NumberWheelView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/WheelToolsView.java_SELECTED": "WheelToolsView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/WheelView.java_SELECTED": "WheelView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wright/KeyboardView.kt_SELECTED": "KeyboardView",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "D:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/relation",
+    "last_opened_file_path": "D:/AndroidProjectShengqu/earn-android-ranqijisuan",
     "memory.settings.postsync.last.time.stamp": "1767066443732",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.17",

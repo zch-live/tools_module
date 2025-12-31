@@ -24,7 +24,7 @@ object JumpTools {
     }
     /**
      * 输入关键词直接跳转
-     * 如跳到放大镜界面，直接输入 放大镜、放大、镜
+     * 如跳到大小写转换界面，直接输入 大小写转换、大小写
      * */
     @RequiresApi(Build.VERSION_CODES.N)
     @JvmStatic
