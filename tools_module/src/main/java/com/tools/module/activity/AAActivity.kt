@@ -48,7 +48,6 @@ class AAActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         StatusBarUtil.setTransparentForWindow(this)
         setContentView(R.layout.activity_aa)
         JumpTools.mOnListener?.start()

@@ -3,6 +3,7 @@ package com.tools.module.utils;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
@@ -116,14 +117,16 @@ public class StatusBarUtil {
      * @param activity 目标界面
      */
     public static void setTransparentForWindow(@NonNull Activity activity) {
-        transparentStatusBar(activity.getWindow());
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
             lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
             activity.getWindow().setAttributes(lp);
         }*/
         //setColor(activity, Color.WHITE);
+        activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setDarkMode(activity);
+        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        transparentStatusBar(activity.getWindow());
     }
 
     public static void transparentStatusBar(@NonNull final Window window) {
