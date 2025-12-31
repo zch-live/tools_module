@@ -132,6 +132,7 @@ public class StatusBarUtil {
             activity.getWindow().setAttributes(lp);
         }
 
+        setDarkMode(activity);
     }
 
     /**
