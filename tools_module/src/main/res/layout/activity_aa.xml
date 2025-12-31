@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="AA收款"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_back_black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <View
+        android:id="@+id/v_1"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@drawable/cs_white_8_bg"
+        android:backgroundTint="#F4F4F4"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintStart_toStartOf="@id/v_bg"
+        app:layout_constraintTop_toTopOf="@id/v_bg" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="14dp"
+        android:gravity="center"
+        android:text="总金额"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_1"
+        app:layout_constraintStart_toStartOf="@id/v_1"
+        app:layout_constraintTop_toTopOf="@id/v_1" />
+
+    <TextView
+        android:id="@+id/tv_money_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="2"
+        android:text="如：150"
+        android:textColor="#992A2A2A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_1"
+        app:layout_constraintEnd_toEndOf="@id/v_2"
+        app:layout_constraintStart_toEndOf="@id/tv_money"
+        app:layout_constraintTop_toTopOf="@id/v_1" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/v_2"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintStart_toStartOf="@id/v_bg" />
+
+    <View
+        android:id="@+id/v_2"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cs_white_8_bg"
+        android:backgroundTint="#F4F4F4"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintStart_toStartOf="@id/v_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintStart_toStartOf="@id/v_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_2" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="人数"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_2"
+        app:layout_constraintStart_toStartOf="@id/v_2"
+        app:layout_constraintTop_toTopOf="@id/v_2" />
+
+    <TextView
+        android:id="@+id/tv_people_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="2"
+        android:text="如：3"
+        android:textColor="#992A2A2A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_2"
+        app:layout_constraintEnd_toEndOf="@id/v_2"
+        app:layout_constraintStart_toEndOf="@id/tv_people"
+        app:layout_constraintTop_toTopOf="@id/v_2" />
+
+    <View
+        android:id="@+id/v_3"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cs_white_8_bg"
+        android:backgroundTint="#F4F4F4"
+        app:layout_constraintEnd_toEndOf="@id/v_bg"
+        app:layout_constraintStart_toStartOf="@id/v_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_2" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="14dp"
+        android:gravity="center"
+        android:text="金额"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_3"
+        app:layout_constraintStart_toStartOf="@id/v_3"
+        app:layout_constraintTop_toTopOf="@id/v_3" />
+
+    <TextView
+        android:id="@+id/tv_result_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#992A2A2A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_3"
+        app:layout_constraintEnd_toEndOf="@id/v_3"
+        app:layout_constraintStart_toEndOf="@id/tv_result"
+        app:layout_constraintTop_toTopOf="@id/v_3" />
+
+    <com.tools.module.wright.KeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
