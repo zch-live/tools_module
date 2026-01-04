@@ -20,6 +20,9 @@
         <activity android:name="com.tools.module.activity.ZaActivity" android:exported="true"/>
         <activity android:name="com.tools.module.activity.BmiActivity" android:exported="true"/>
         <activity android:name="com.tools.module.activity.RelationActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.RulerActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.HorizontalMessureActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.ProtractorActivity" android:exported="true"/>
 
     </application>
 

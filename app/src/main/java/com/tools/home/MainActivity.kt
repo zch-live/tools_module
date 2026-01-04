@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
     var btn13: Button? = null
     var btn14: Button? = null
     var btn15: Button? = null
+    var btn16: Button? = null
+    var btn17: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +48,8 @@ class MainActivity : AppCompatActivity() {
         btn13 = findViewById(R.id.btn13)
         btn14 = findViewById(R.id.btn14)
         btn15 = findViewById(R.id.btn15)
+        btn16 = findViewById(R.id.btn16)
+        btn17 = findViewById(R.id.btn17)
 
         setOnClick()
     }
@@ -92,6 +96,11 @@ class MainActivity : AppCompatActivity() {
                 "界面关闭".toast(this@MainActivity)
             }
         }) }
+        btn13!!.setOnClickListener { JumpTools.jump(this@MainActivity, "水平仪") }
+        btn14!!.setOnClickListener { JumpTools.jump(this@MainActivity, "量角器") }
+        btn15!!.setOnClickListener { JumpTools.jump(this@MainActivity, "尺子") }
+        btn16!!.setOnClickListener { JumpTools.jump(this@MainActivity, "放大") }
+        btn17!!.setOnClickListener { JumpTools.jump(this@MainActivity, "手电") }
     }
 
 }

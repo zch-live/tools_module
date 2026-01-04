@@ -4,6 +4,9 @@ package com.tools.module.bean
  * Desc : 常量集
  */
 object Constants {
+
+    const val NO_CAMERA_PRE = "NO_CAMERA_PRE"
+
     const val CAL_TYPE_0 = "0"
     const val CAL_TYPE_1 = "1"
     const val CAL_TYPE_2 = "2"

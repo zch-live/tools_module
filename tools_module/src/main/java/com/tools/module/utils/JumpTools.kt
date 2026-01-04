@@ -25,6 +25,7 @@ object JumpTools {
     /**
      * 输入关键词直接跳转
      * 如跳到大小写转换界面，直接输入 大小写转换、大小写
+     * 放大镜等需要权限相关的功能 无需再次申请 这里已经添加相关逻辑
      * */
     @RequiresApi(Build.VERSION_CODES.N)
     @JvmStatic
@@ -66,6 +67,21 @@ object JumpTools {
         }
         if (s.contains("称呼") || s.contains("称呼计算")){
             RelationActivity.start(c)
+        }
+        if (s.contains("尺子")){
+            RulerActivity.start(c)
+        }
+        if (s.contains("水平") || s.contains("水平仪")){
+            HorizontalMessureActivity.start(c)
+        }
+        if (s.contains("量角") || s.contains("量角器")){
+            ProtractorActivity.start(c)
+        }
+        if (s.contains("放大") || s.contains("放大镜")){
+            ProtractorActivity.start(c)
+        }
+        if (s.contains("手电") || s.contains("手电筒")){
+            ProtractorActivity.start(c)
         }
     }
 
