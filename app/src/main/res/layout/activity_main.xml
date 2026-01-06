@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -99,16 +99,29 @@
             android:text="尺子" />
 
         <Button
-                android:id="@+id/btn16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="放大镜" />
+            android:id="@+id/btn16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="放大镜" />
 
         <Button
-                android:id="@+id/btn17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="手电筒" />
+            android:id="@+id/btn17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手电筒" />
+
+        <Button
+            android:id="@+id/btn18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="指南针" />
+
+        <Button
+            android:id="@+id/btn19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算器" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

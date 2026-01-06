@@ -78,10 +78,16 @@ object JumpTools {
             ProtractorActivity.start(c)
         }
         if (s.contains("放大") || s.contains("放大镜")){
-            ProtractorActivity.start(c)
+            MagnifierActivity.start(c)
         }
         if (s.contains("手电") || s.contains("手电筒")){
-            ProtractorActivity.start(c)
+            LightActivity.start(c)
+        }
+        if (s.contains("指南") || s.contains("指南针")){
+            CompassActivity.start(c)
+        }
+        if (s.contains("计算器")){
+            JSQActivity.start(c)
         }
     }
 

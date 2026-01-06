@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     var btn15: Button? = null
     var btn16: Button? = null
     var btn17: Button? = null
+    var btn18: Button? = null
+    var btn19: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         btn15 = findViewById(R.id.btn15)
         btn16 = findViewById(R.id.btn16)
         btn17 = findViewById(R.id.btn17)
+        btn18 = findViewById(R.id.btn18)
+        btn19 = findViewById(R.id.btn19)
 
         setOnClick()
     }
@@ -101,6 +105,8 @@ class MainActivity : AppCompatActivity() {
         btn15!!.setOnClickListener { JumpTools.jump(this@MainActivity, "尺子") }
         btn16!!.setOnClickListener { JumpTools.jump(this@MainActivity, "放大") }
         btn17!!.setOnClickListener { JumpTools.jump(this@MainActivity, "手电") }
+        btn18!!.setOnClickListener { JumpTools.jump(this@MainActivity, "指南") }
+        btn19!!.setOnClickListener { JumpTools.jump(this@MainActivity, "计算器") }
     }
 
 }

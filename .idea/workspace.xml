@@ -37,51 +37,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d702ef5-6f0c-43f9-a068-6de7139994cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/HorizontalMessureActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/ProtractorActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/RulerActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/dialog/CameraPreDialog.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/dialog/TipsDialog.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/SharedPreferencesUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/wright/CameraPreview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/wright/RotateDragView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/wright/RulerView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/bg_009af6_40.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/bg_dialog_cancel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/cs_white_20_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_ruler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_tools_protractor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/dialong_camera.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/dialong_tips.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/fragment_hor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_ball_pic3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_horizontal_messure_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_lock_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_lock_bg2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_protractor.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_protractor_pointer.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_ruler_line.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_tools_2_1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_tools_2_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_tools_2_3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_tools_2_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/CompassActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/JSQActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/LightActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/MagnifierActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/CalculatorUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/FlashlightUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/bg_progress1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/cs_white_top_17_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/drawable/ic_progress_drawable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_compass.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_jsq.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_light.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_tools_magnifier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_0.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_1x.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_7.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_8.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_9.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_ac.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_add.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_angle.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_brackets1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_brackets2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_change.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_cos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_del.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_div.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_e.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_equal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_ex.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_expand.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_ln.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_log.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_mul.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_percent.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_pi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_point.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_sin.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_square.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_sub.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_tan.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_x2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_cal_xy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_check1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_check2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_delete.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_home_compass_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_light1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_light2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools_module/src/main/res/mipmap-xxhdpi/ic_white_back.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tools/home/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tools/home/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools_module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools_module/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/AAActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/activity/AAActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/bean/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/bean/Constants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/JumpTools.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/java/com/tools/module/utils/JumpTools.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_tools_protractor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools_module/src/main/res/layout/activity_tools_protractor.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=v8be4hww8pi755lb)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[v8be4hww8pi755lb]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -107,8 +133,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,16 +167,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android-custom-viewC:/Users/16354/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED": "RecyclerView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/NumberWheelView.java_SELECTED": "NumberWheelView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/WheelToolsView.java_SELECTED": "WheelToolsView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wheelview/WheelView.java_SELECTED": "WheelView",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsActivity/tools_module/src/main/java/com/tools/module/wright/KeyboardView.kt_SELECTED": "KeyboardView",
+    "android-custom-viewD:/AndroidProjectShengqu/ToolsModule/tools_module/src/main/java/com/tools/module/wright/CameraPreview.java_SELECTED": "CameraPreview",
     "android-custom-viewD:/AndroidProjectShengqu/ToolsModule/tools_module/src/main/java/com/tools/module/wright/RulerView.kt_SELECTED": "RulerView",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/AndroidProjectShengqu/earn-android-ranqijisuan",
-    "memory.settings.postsync.last.time.stamp": "1767162452181",
+    "last_opened_file_path": "D:/AndroidProjectShengqu/ToolsModule/tools_module/src/main/res/mipmap-xxhdpi",
+    "memory.settings.postsync.last.time.stamp": "1767683348154",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -183,9 +211,9 @@
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.tools.module.activity" />
+      <recent name="com.tools.module.utils" />
       <recent name="com.tools.module.dialog" />
       <recent name="com.tools.module.wright" />
-      <recent name="com.tools.module.utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tools.module.utils" />
@@ -207,12 +235,33 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
-      <Java>
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Java>
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_PROFILING_ENABLED" value="false" />
@@ -244,12 +293,33 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
-      <Java>
-        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
-        <option name="DEBUG_SANDBOX_SDK" value="false" />
-      </Java>
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_PROFILING_ENABLED" value="false" />
@@ -298,6 +368,7 @@
       <updated>1733215724522</updated>
       <workItem from="1767496487523" duration="1323000" />
       <workItem from="1767499020068" duration="4518000" />
+      <workItem from="1767512846521" duration="29000" />
     </task>
     <servers />
   </component>

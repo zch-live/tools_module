@@ -23,6 +23,10 @@
         <activity android:name="com.tools.module.activity.RulerActivity" android:exported="true"/>
         <activity android:name="com.tools.module.activity.HorizontalMessureActivity" android:exported="true"/>
         <activity android:name="com.tools.module.activity.ProtractorActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.MagnifierActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.LightActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.CompassActivity" android:exported="true"/>
+        <activity android:name="com.tools.module.activity.JSQActivity" android:exported="true"/>
 
     </application>
 

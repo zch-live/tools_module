@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECF1">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="计算器"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_back_black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <View
+        android:id="@+id/v_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@id/iv_expand"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_his"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end|bottom"
+        android:text="0"
+        android:textColor="#87C4FF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_input"
+        app:layout_constraintEnd_toEndOf="@id/v_result"
+        app:layout_constraintStart_toStartOf="@id/v_result"
+        app:layout_constraintTop_toTopOf="@id/v_result" />
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="3"
+        android:paddingVertical="5dp"
+        android:text="0"
+        android:textColor="#1D8FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/v_line"
+        app:layout_constraintEnd_toEndOf="@id/v_result"
+        app:layout_constraintStart_toStartOf="@id/v_result" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/tv_result"
+        app:layout_constraintEnd_toEndOf="@id/v_result"
+        app:layout_constraintStart_toStartOf="@id/v_result" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:paddingVertical="5dp"
+        android:text="0"
+        android:textColor="#333333"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@id/v_result"
+        app:layout_constraintEnd_toEndOf="@id/v_result"
+        app:layout_constraintStart_toStartOf="@id/v_result" />
+
+    <ImageView
+        android:id="@+id/iv_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:src="@mipmap/ic_cal_expand"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/cl_keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/cl_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cs_white_top_17_bg"
+        android:backgroundTint="#F2F3F5"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--收起-->
+        <GridLayout
+            android:id="@+id/gl_cal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="5">
+
+            <ImageView
+                android:id="@+id/btn_ac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_ac" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_del" />
+
+            <ImageView
+                android:id="@+id/btn_percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_percent" />
+
+            <ImageView
+                android:id="@+id/btn_divide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_div" />
+
+            <ImageView
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_7" />
+
+            <ImageView
+                android:id="@+id/btn_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_8" />
+
+            <ImageView
+                android:id="@+id/btn_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_9" />
+
+            <ImageView
+                android:id="@+id/btn_multiply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_mul" />
+
+            <ImageView
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_4" />
+
+            <ImageView
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_5" />
+
+            <ImageView
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_6" />
+
+            <ImageView
+                android:id="@+id/btn_subtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_sub" />
+
+            <ImageView
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_1" />
+
+            <ImageView
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_2" />
+
+            <ImageView
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_3" />
+
+            <ImageView
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_add" />
+
+            <ImageView
+                android:id="@+id/btn_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_change" />
+
+            <ImageView
+                android:id="@+id/btn_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_0" />
+
+            <ImageView
+                android:id="@+id/btn_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_point" />
+
+            <ImageView
+                android:id="@+id/btn_equal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_equal" />
+        </GridLayout>
+
+        <!--展开-->
+        <GridLayout
+            android:id="@+id/gl_cal_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="5"
+            android:rowCount="7"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_s_x_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_x2" />
+
+            <ImageView
+                android:id="@+id/btn_s_angle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_angle" />
+
+            <ImageView
+                android:id="@+id/btn_s_sin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_sin" />
+
+            <ImageView
+                android:id="@+id/btn_s_cos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_cos" />
+
+            <ImageView
+                android:id="@+id/btn_s_tan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_tan" />
+
+            <ImageView
+                android:id="@+id/btn_s_x_y"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_xy" />
+
+            <ImageView
+                android:id="@+id/btn_s_log"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_log" />
+
+            <ImageView
+                android:id="@+id/btn_s_ln"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_ln" />
+
+            <ImageView
+                android:id="@+id/btn_s_brackets1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_brackets1" />
+
+            <ImageView
+                android:id="@+id/btn_s_brackets2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_brackets2" />
+
+            <ImageView
+                android:id="@+id/btn_s_square"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_square" />
+
+            <ImageView
+                android:id="@+id/btn_s_ac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_ac" />
+
+            <ImageView
+                android:id="@+id/btn_s_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_del" />
+
+            <ImageView
+                android:id="@+id/btn_s_percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_percent" />
+
+            <ImageView
+                android:id="@+id/btn_s_divide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_div" />
+
+            <ImageView
+                android:id="@+id/btn_s_e_x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_ex" />
+
+            <ImageView
+                android:id="@+id/btn_s_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_7" />
+
+            <ImageView
+                android:id="@+id/btn_s_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_8" />
+
+            <ImageView
+                android:id="@+id/btn_s_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_9" />
+
+            <ImageView
+                android:id="@+id/btn_s_multiply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_mul" />
+
+            <ImageView
+                android:id="@+id/btn_s_1x"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_1x" />
+
+            <ImageView
+                android:id="@+id/btn_s_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_4" />
+
+            <ImageView
+                android:id="@+id/btn_s_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_5" />
+
+            <ImageView
+                android:id="@+id/btn_s_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_6" />
+
+            <ImageView
+                android:id="@+id/btn_s_subtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_sub" />
+
+            <ImageView
+                android:id="@+id/btn_s_pi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_pi" />
+
+            <ImageView
+                android:id="@+id/btn_s_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_1" />
+
+            <ImageView
+                android:id="@+id/btn_s_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_2" />
+
+            <ImageView
+                android:id="@+id/btn_s_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_3" />
+
+            <ImageView
+                android:id="@+id/btn_s_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_add" />
+
+            <ImageView
+                android:id="@+id/btn_s_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_change" />
+
+            <ImageView
+                android:id="@+id/btn_s_e"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_e" />
+
+            <ImageView
+                android:id="@+id/btn_s_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_0" />
+
+            <ImageView
+                android:id="@+id/btn_s_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_point" />
+
+            <ImageView
+                android:id="@+id/btn_s_equal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/ic_cal_equal" />
+
+        </GridLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
